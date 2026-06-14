@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="top-bar">
+        <h1>Weather App</h1>
+        <button id="themeBtn">🌙</button>
+    </div>
+
+    <div class="search-box">
+        <input type="text" id="cityInput" placeholder="Enter city">
+        <button onclick="getWeather()">Search</button>
+        <button onclick="getCurrentLocation()">📍</button>
+    </div>
+
+    <div id="recentSearches"></div>
+
+    <div class="weather-card" id="weatherCard">
+        <img id="weatherIcon">
+
+        <h2 id="city"></h2>
+
+        <p id="condition"></p>
+        <p id="temp"></p>
+        <p id="humidity"></p>
+        <p id="wind"></p>
+        <p id="aqi"></p>
+    </div>
+
+    <h2 class="forecast-title">3-Day Forecast</h2>
+
+    <div id="forecastContainer"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
